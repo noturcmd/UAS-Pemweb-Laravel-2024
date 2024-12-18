@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    /* Smooth scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.search-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-container input::placeholder {
+    color: #888;
+}
+
+.search-container i {
+    color: #666;
+    margin-right: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+    height: 250px;
+    /* Tinggi kartu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .card-body {
+    z-index: 2;
+    /* Supaya teks di atas background */
+}
+
+/* Background untuk setiap layanan */
+.service-card.kereta {
+    background-image: url('assets/kereta.jpg');
+}
+
+.service-card.pesawat {
+    background-image: url('assets/pesawat.png');
+}
+
+.service-card.hotel {
+    background-image: url('assets/hotel.jpg');
+}
+
+.service-card.mobil {
+    background-image: url('assets/mobil.jpg');
+}
+
+/* Overlay untuk membuat teks lebih jelas */
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Overlay transparan */
+    z-index: 1;
+}
