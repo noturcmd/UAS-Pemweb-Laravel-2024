@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
-            $table->string("user_id")->unique();
-            $table->string("ticket_id")->unique();
+            $table->bigInteger("user_id")->unique();
+            $table->bigInteger("ticket_id")->unique();
             $table->integer("passenger_count")->unsigned()->default(0);
             $table->double("total_price")->unsigned()->default(0);
             $table->string("status");
